@@ -21,16 +21,22 @@ body {
 /* ----------- header ----------- */
 
 header {
+    position: relative;
     height: 100%;
-    background-image: url(images/home-house.jpg);
-    background-size: cover;
-    background-color: hsla(217, 68%, 7%, 0.918);
-    background-blend-mode: multiply;
-    filter: grayscale(80%);
 }
 
-nav {
-    
+header::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(images/home-house.jpg), linear-gradient(grey, grey);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+header > * {
+    position: inherit;
 }
 
 .logo {
