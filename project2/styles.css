@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&family=Raleway:wght@100;300;400;500;700;900&display=swap');
 
-:root {
-    --main-color: rgb(172, 172, 172);
-    --scndry-color: rgb(128, 128, 128);
-    --highlight: rgb(124, 88, 105);
-    --main-hwite: rgb(249, 249, 249);
-}
-
-
 * {
     padding: 0;
     margin: 0;
@@ -22,32 +14,6 @@ body {
 
 body {
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    color: var(--main-color);
-    background-color: var(--main-hwite);
-}
-
-
-/* ----------- sticky nav ----------- */
-
-nav {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav > * {
-    padding: 30px 60px
-}
-
-.logo {
-    font-family: 'Megrim', cursive;
-    font-weight: 900;
-    font-size: 30px;
-    color: var(--main-hwite);
 }
 
 
@@ -56,29 +22,6 @@ nav > * {
 
 header {
     height: 100%;
-<<<<<<< HEAD
-    background: black;
-    color: var(--main-hwite);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-}
-
-header::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: url(images/home-house.jpg);
-    background-size: cover;
-    z-index: 1;
-}
-
-header > * {
-    position: inherit;
-    z-index: 2;
-=======
     background-image: url(images/home-house.jpg);
     background-size: cover;
     background-color: hsla(217, 68%, 7%, 0.918);
@@ -89,6 +32,7 @@ header > * {
 nav {
     
 }
->>>>>>> parent of 6c37a2b... in class work 10/24/22
 
+.logo {
+    font-family: 'Megrim', cursive;
 }
