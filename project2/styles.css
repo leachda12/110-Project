@@ -55,8 +55,8 @@ nav > * {
 /* ----------- header ----------- */
 
 header {
-    position: relative;
     height: 100%;
+<<<<<<< HEAD
     background: black;
     color: var(--main-hwite);
     display: flex;
@@ -78,5 +78,17 @@ header::before {
 header > * {
     position: inherit;
     z-index: 2;
+=======
+    background-image: url(images/home-house.jpg);
+    background-size: cover;
+    background-color: hsla(217, 68%, 7%, 0.918);
+    background-blend-mode: multiply;
+    filter: grayscale(80%);
+}
+
+nav {
+    
+}
+>>>>>>> parent of 6c37a2b... in class work 10/24/22
 
 }
