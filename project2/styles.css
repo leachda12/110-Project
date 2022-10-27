@@ -34,7 +34,7 @@ body {
 }
 
 body > * {
-    padding: 20px 5%;
+    padding: 20px 10%;
 }
 
 a {
@@ -75,6 +75,7 @@ img {
 button {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
+    font-weight: 500;
     background-color: var(--highlight);
     color: var(--main-wht);
     padding: 10px 15px;
@@ -267,7 +268,6 @@ h1 {
 .self {
     flex-direction: row;
     justify-content: space-between;
-    max-height: 100vh;
 }
 
 .self > * {
@@ -450,7 +450,7 @@ figcaption img {
 
 footer {
     background: rgb(50 50 50);
-    padding: 120px 60px;
+    padding: 120px 10%;
 }
 
 h4 {
@@ -460,18 +460,93 @@ h4 {
 
 .footer-nav {
     display: flex;
+    justify-content: space-between;
 }
 
 .footer-about {
+    display: inline-block;
+    width: 25%;
     flex-basis: 1;
 }
 
 .footer-pilot {
+    width: 50%;
     flex-basis: 4;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
+    align-items: start;
 }
 
 .footer-etc {
+    width: 60%
+}
 
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.footer-links > a {
+    padding: 10px 0;
+}
+
+.footer-pilot h4 {
+    padding-bottom: 10px;
+}
+
+.subscribe {
+    
+}
+
+.sub-input {
+    background: transparent;
+    border: 1px solid var(--bckp-gry);
+    padding: 15px;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.sub-input > input,
+.sub-input > input:focus {
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    outline: none;
+    width: 60%;
+}
+
+.sub-input > input:placeholder-shown {
+    color: var(--bckp-gry);
+}
+
+.sub-btn {
+    position: relative;
+    left: 16px;
+    padding: 16px 25px;
+    border-radius: 0 25px 25px 0;
+    transition-duration: 400ms;
+}
+
+.sub-btn:hover {
+    background-color: var(--main-wht);
+    color: var(--highlight);
+}
+
+.footer-etc > * {
+    margin-bottom: 30px;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links > a {
+    margin-right: 20px;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid var(--bckp-gry);
+    padding-top: 40px;
 }
