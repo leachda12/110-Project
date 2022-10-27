@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cd4daa012b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>SLATED.</title>
 </head>
@@ -24,27 +25,34 @@
         </div>
     </nav>
     <header>
-        <div class="header">
-            <div class="hero">
-                <h1>Find your dream home today</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo dolorem vel omnis labore tenetur.</p>
-            </div>
-        </header>
+        <div class="hero">
+            <h1>Find your dream home today</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo dolorem vel omnis labore tenetur.</p>
         </div>
-    <section class="how">
+    </header>
+    <section class="how cent">
         <div class="head how-head">
             <h2>How It Works</h2>
         </div>
         <div class="row how-row">
             <div class="col how-col">
+                <span class="icon-container">
+                    <i class="fa-solid fa-house"></i>
+                </span>
                 <h3>Search Properties</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="col how-col">
+                <span class="icon-container">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                </span>
                 <h3>Buy Properties</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="col how-col">
+                <span class="icon-container">
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                </span>
                 <h3>Property Investments</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
@@ -52,11 +60,11 @@
     </section>
     <section class="prop">
         <div class="head prop-head">
-            <h1>Properties</h1>
-            <div class="buttons">
-                <a href="" class="previous">Next</a>
+            <h2>Properties</h2>
+            <div class="prop-btns">
+                <button class="prop-btn-dir">Next</button>
                 <span>/</span>
-                <a href="" class="next">Previous</a>
+                <button class="prop-btn-dir">Previous</button>
             </div>
         </div>
         <div class="row prop-row">
@@ -92,59 +100,71 @@
             </div>
         </div>
         <div class="btn-box">
-            <button class="btn">View All Available Properties</button>
+            <button class="btn prop-btn">View All Available Properties</button>
         </div>
     </section>
     <section class="agent">
         <div class="head agent-head">
             <h2>Agents</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus nostrum optio eligendi voluptates blanditiis.
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita maiores odio magni?</p>
         </div>
         <div class="row agent-row">
             <div class="col agent-col">
                 <img src="images/agents/alice.jpg" alt="">
-                <h3>Alice Edwards</h3>
-                <p>Real Estate Agent</p>
+                <div class="agent-abt">
+                    <h3>Alice Edwards</h3>
+                    <p>Real Estate Agent</p>
+                </div>
             </div>
             <div class="col agent-col">
                 <img src="images/agents/bill.jpg" alt="">
-                <h3>Bill Stevenson</h3>
-                <p>Real Estate Agent</p>
+                <div class="agent-abt">
+                    <h3>Bill Stevenson</h3>
+                    <p>Real Estate Agent</p>
+                </div>
             </div>
             <div class="col agent-col">
                 <img src="images/agents/marie.jpg" alt="">
-                <h3>Marie Watts</h3>
-                <p>Real Estate Agent</p>
+                <div class="agent-abt">
+                    <h3>Marie Watts</h3>
+                    <p>Real Estate Agent</p>
+                </div>
             </div>
         </div>
         <div class="row agent-row">
             <div class="col agent-col">
                 <img src="images/agents/casper.jpg" alt="">
-                <h3>Casper</h3>
-                <p>Real Estate Agent</p>
+                <div class="agent-abt">
+                    <h3>Casper</h3>
+                    <p>Real Estate Agent</p>
+                </div>
             </div>
             <div class="col agent-col">
                 <img src="images/agents/angela.jpg" alt="">
-                <h3>Angela Williams</h3>
-                <p>Real Estate Agent</p>
+                <div class="agent-abt">
+                    <h3>Angela Williams</h3>
+                    <p>Real Estate Agent</p>
+                </div>
             </div>
             <div class="col agent-col">
                 <img src="images/agents/tim.jpg" alt="">
-                <h3>Tim Castillo</h3>
-                <p>Real Estate Agent</p>
+                <div class="agent-abt">
+                    <h3>Tim Castillo</h3>
+                    <p>Real Estate Agent</p>
+                </div>
             </div>
         </div>
     </section>
     <section class="self">
         <div class="self-pic">
-            <img src="" alt="">
+            <img src="images/properties/house6.jpg" alt="">
         </div>
         <div class="self-block">
-            <h2>We Are the Absolute Best Real Estate Company Ever to Exist in the Entire History of Real Estate Companies</h2>
+            <h2>We Are the Absolute Best Real Estate Company Ever to Exist in the Entire History of Real Estate
+                Companies</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, adipisci?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor molestiae pariatur earum impedit id deleniti deserunt, odit dolores nisi enim.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor molestiae pariatur earum impedit id
+                deleniti deserunt, odit dolores nisi enim.</p>
             <ul>
                 <li>Lorem ipsum dolor sit.</li>
                 <li>Amet alias fugit dolor!</li>
@@ -152,105 +172,205 @@
                 <li>Amet praesentium repellat ex?</li>
                 <li>Sequi vel autem laudantium.</li>
             </ul>
-            <button class="btn">Learn More</button>
+            <button class="btn self-btn">Learn More</button>
         </div>
     </section>
-    <section class="serve">
+    <section class="serve cent">
         <div class="head serve-head">
             <h2>Services</h2>
         </div>
         <div class="row serve-row">
             <div class="col serve-col">
-                <img src="" alt="">
-                <div class="serv-content">
-                    <h3>Search Properties</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, vitae. Magnam voluptate error illum alias?</p>
+                <span class="icon-container">
+                    <i class="fa-solid fa-house"></i>
+                </span>
+                <div class="serve-content">
+                    <div>
+                        <h3>Search Properties</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, vitae. Magnam voluptate error
+                            illum alias?</p>
+                    </div>
                     <a href="">Learn More</a>
                 </div>
             </div>
             <div class="col serve-col">
-                <img src="" alt="">
-                <div class="serv-content">
-                    <h3>Buy Properties</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque ut, sapiente aspernatur vel explicabo est.</p>
+                <span class="icon-container">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                </span>
+                <div class="serve-content">
+                    <div>
+                        <h3>Buy Properties</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque ut, sapiente aspernatur vel
+                            explicabo est.</p>
+                    </div>
                     <a href="">Learn More</a>
                 </div>
             </div>
             <div class="col serve-col">
-                <img src="" alt="">
-                <div class="serv-content">
-                    <h3>Invest</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eligendi iure, provident nihil dolore hic.</p>
+                <span class="icon-container">
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                </span>
+                <div class="serve-content">
+                    <div>
+                        <h3>Invest</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eligendi iure, provident nihil
+                            dolore hic.</p>
+                    </div>
                     <a href="">Learn More</a>
                 </div>
             </div>
         </div>
         <div class="row serve-row">
             <div class="col serve-col">
-                <img src="" alt="">
-                <div class="serv-content">
-                    <h3>Make a Listing</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptas repellat est laborum laboriosam beatae?</p>
+                <span class="icon-container">
+                    <i class="fa-solid fa-sign-hanging"></i>
+                </span>
+                <div class="serve-content">
+                    <div>
+                        <h3>Make a Listing</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptas repellat est laborum
+                            laboriosam beatae?</p>
+                    </div>
                     <a href="">Learn More</a>
                 </div>
             </div>
             <div class="col serve-col">
-                <img src="" alt="">
-                <div class="serv-content">
-                    <h3>Property Locator</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quas similique unde rem eligendi atque.</p>
+                <span class="icon-container">
+                    <i class="fa-solid fa-magnifying-glass-location"></i>
+                </span>
+                <div class="serve-content">
+                    <div>
+                        <h3>Property Locator</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quas similique unde rem
+                            eligendi atque.</p>
+                    </div>
                     <a href="">Learn More</a>
                 </div>
             </div>
             <div class="col serve-col">
-                <img src="" alt="">
-                <div class="serv-content">
-                    <h3>Stated for iOS/Android</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa optio, est dicta cumque esse maiores.</p>
+                <span class="icon-container">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </span>
+                <div class="serve-content">
+                    <div>
+                        <h3>Stated for iOS/Android</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa optio, est dicta cumque esse
+                            maiores.</p>
+                    </div>
                     <a href="">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="cred">
+    <section class="cred cent">
         <div class="head cred-head">
             <h2>What Our Clients Are Saying</h2>
         </div>
         <div class="cred-content">
-            bq.cred-quote
+            <figure class="cred-fig">
+                <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quis laudantium odio
+                    ea autem molestias alias! Illo, aperiam facere. Repellendus rerum soluta repudiandae voluptatibus
+                    sint officia, quas consequuntur nostrum omnis."</blockquote>
+                <figcaption>
+                    <img src="images/customers/michael.jpg" alt="">
+                    <p>Michael Addams</p>
+                </figcaption>
+            </figure>
+            <figure class="cred-fig">
+                <blockquote>"Est optio animi, minima distinctio perferendis illum earum. Suscipit cupiditate a, maiores
+                    dignissimos dicta nemo nam fugit recusandae nobis dolor ullam magni aperiam repellendus soluta.
+                    Quaerat pariatur eaque illum recusandae?"</blockquote>
+                <figcaption>
+                    <img src="images/customers/ben.jpg" alt="">
+                    <p>Ben Fields</p>
+                </figcaption>
+            </figure>
+            <figure class="cred-fig">
+                <blockquote>"Esse optio facilis impedit, fuga adipisci maxime exercitationem? Optio earum vitae commodi
+                    dolores nesciunt, quos, ab voluptatem at porro voluptate dolorum repellendus exercitationem, neque
+                    deserunt quaerat sunt fugiat nihil enim."</blockquote>
+                <figcaption>
+                    <img src="images/customers/nina.jpg " alt="">
+                    <p>Nina Richards</p>
+                </figcaption>
+            </figure>
         </div>
     </section>
-    <section class="cont">
+    <section class="cont cent">
         <div class="head cont-head">
+            <h2>Contact Us</h2>
         </div>
         <div class="cont-content">
             <div class="cont-form">
                 <form action="">
-
+                    <h3>Contact Form</h3>
+                    <div class="cont-row">
+                        <label for="name">Name</label><br>
+                        <input type="text" name="" id="name">
+                    </div>
+                    <div class="cont-row">
+                        <label for="email">Email</label><br>
+                        <input type="text" name="" id="email">
+                    </div>
+                    <div class="cont-row">
+                        <label for="subject">Subject</label><br>
+                        <input type="text" name="" id="subject">
+                    </div>
+                    <div class="cont-row">
+                        <label for="message">Message</label><br>
+                        <textarea name="" id="message" rows="8"></textarea>
+                    </div>
+                    <div class="cont-row">
+                        <button class="cont-btn">Send Message</button>
+                    </div>
                 </form>
             </div>
             <div class="cont-info">
-                <address>
-
-                </address>
+                <div class="address">
+                    <div class="cont-add">
+                        <h4>Address</h4>
+                        <p>3425 Left Lane, Rightburgh, Georgia, USA</p>
+                    </div>
+                    <div class="cont-add">
+                        <h4>Phone</h4>
+                        <a href="">555-555-5555</a>
+                    </div>
+                    <div class="cont-add">
+                        <h4>Email Address</h4>
+                        <a href="">ouremail@domain.com</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <footer>
         <div class="footer-nav">
             <div class="footer-about">
-
+                <h4>About Stated</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non pariatur sunt tenetur repellendus architecto consectetur deserunt, et recusandae voluptatem numquam sequi cupiditate in ullam eius.</p>
             </div>
             <div class="footer-pilot">
                 <div class="footer-links">
-
+                    <h4>Quick Links</h4>
+                    <a href="">About Us</a>
+                    <a href="">Services</a>
+                    <a href="">Testimonials</a>
+                    <a href="">Contact Us</a>
                 </div>
                 <div class="footer-etc">
                     <div class="subscribe">
-
+                        <h4>Subscribe to our Newsletter</h4>
+                        <input type="text" placeholder="Enter Email">
+                        <button>Send</button>
                     </div>
                     <div class="socials">
-                        
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="" class="fb-link"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="" class="twit-link"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="" class="insta-link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="" class="lnkdin-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
