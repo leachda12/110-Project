@@ -33,7 +33,7 @@ topCheckOptions);
 topCheck.observe(header);
 
 
-const shrinkOptions = {rootMargin: '-700px 0px 0px 0px'};
+const shrinkOptions = {rootMargin: '-600px 0px 0px 0px'};
 
 const shrinkTest = new IntersectionObserver(function(entries, shrinkTest) {
     entries.forEach(entry => {

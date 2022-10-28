@@ -172,7 +172,7 @@ nav {
 
 .nav-off-top {
     background: var(--main-wht);
-    box-shadow: 0 2px 5px rgba(0 0 0 / 0.685);
+    box-shadow: 0 1px 05 rgba(0 0 0 / 0.5);
 }
 
 .link-off-top {
@@ -485,6 +485,10 @@ figcaption img {
 .cont-add {
     padding: 20px 25px;
     line-height: 1.6;
+}
+
+.cont-add h4 {
+    color: var(--scndry-clr);
 }
 
 .cont-add a {
