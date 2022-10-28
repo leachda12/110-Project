@@ -30,7 +30,8 @@ body {
     font-weight: 500;
     color: var(--main-clr);
     background: var(--main-wht);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
 }
 
 body > * {
@@ -138,13 +139,20 @@ nav {
     padding: 30px 75px;
     color: var(--main-wht);
     border-bottom: 1px solid var(--main-clr);
+    transition: 400ms;
 }
 
-.logo * {
+
+.logo {
     font-family: 'Megrim', cursive;
     font-size: 30px;
     font-weight: 600;
-    filter: drop-shadow(6px 8px rgb(0 0 0));
+    transition: 400ms;
+}
+
+.logo-off-top {
+    color: var(--scndry-clr);
+    /* filter: drop-shadow(6px -6px rgb(0 0 0)); */
 }
 
 .nav-links {
@@ -154,7 +162,31 @@ nav {
 
 .nav-link {
     color: var(--bckp-gry);
+    transition: 400ms;
 }
+
+.home-link {
+    color: var(--main-wht);
+    transition: 400ms;
+}
+
+.nav-off-top {
+    background: var(--main-wht);
+    box-shadow: 0 2px 5px rgba(0 0 0 / 0.685);
+}
+
+.link-off-top {
+    color: var(--scndry-clr);
+}
+
+.home-off-top {
+    color: var(--highlight);
+}
+
+.nav-shrink {
+    padding: 15px 60px 15px 90px;
+}
+
 
 /* ----------- header ----------- */
 
@@ -177,7 +209,8 @@ header {
 }
 
 h1 {
-
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
 
@@ -201,6 +234,13 @@ h1 {
 
 /* ----------- properties ----------- */
 
+.prop {
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .prop-head {
     display: flex;
     justify-content: space-between;
@@ -219,6 +259,13 @@ h1 {
     padding: 15px 80px;
 }
 
+.prop-row {
+    width: 100%;
+}
+
+.prop-row-slide {
+    transition: transform 350ms ease-out;
+}
 
 
 /* ----------- agents ----------- */
