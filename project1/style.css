@@ -1,8 +1,13 @@
+@font-face {
+    font-family: 'Cartograph';
+    src: url();
+}
+
 :root {
     --cat1: #f5e0dc;
     --cat2: #f2cdcd;
     --cat3: #f5c2e7;
-    --cat4: #A;
+    --cat4: #A6E3A1;
     --cat5: #f38ba8;
     --cat6: #eba0ac;
     --cat7: #fab387;
@@ -29,4 +34,7 @@ body {
 
 body {
     background-color: #1E1E2E;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%239399B2' stroke-width='66.9' stroke-opacity='0.19' %3E%3Ccircle fill='%231E1E2E' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23222233' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23262738' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%232b2b3c' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%232f3041' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23333446' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%2338394b' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%233c3e50' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23414355' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%2346475b' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%234a4c60' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%234f5165' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%2354566b' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23585b70' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%235d6075' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%2362667b' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23676b80' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%236C7086' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E"); /* background by www.svgbackgrounds.com */
+    background-attachment: fixed;
+    background-size: cover;
 }
