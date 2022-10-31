@@ -51,26 +51,19 @@ shrinkTest.observe(header);
 
 
 
+$('.prop-row').slick({
+    infinite: true,
+    slidesToShow: 4,
+    prevArrow: $('.prev-btn'),
+    nextArrow: $('.next-btn')
+    },
+);
 
-const slider = document.querySelector('.prop-row');
-const propCols = Array.from(slider.children);
-const next = document.querySelector('.next-btn');
-const prev = document.querySelector('.prev-btn');
-const colWidth = propCols[0].getBoundingClientRect().width;
-let cnt = 0;
-console.log(colWidth);
-
-slider.style.transform = 'translateX(' + (colWidth * cnt) + 'px)';
-
-
-next.addEventListener('click', () => {
-    slider.classList.add('prop-row-slide');
-    cnt--;
-    slider.style.transform = 'translateX(' + (colWidth * cnt) + 'px)';
-})
-
-prev.addEventListener('click', () => {
-    slider.classList.add('prop-row-slide');
-    cnt++;
-    slider.style.transform = 'translateX(' + (colWidth * cnt) + 'px)';
-})
+$('.cred-content').slick({
+    infinite: true,
+    slidesToShow: 1,
+    prevArrow: '<button class="cred-prev">‹</button>',
+    nextArrow: '<button class="cred-next">›</button>'
+    },
+);
+   

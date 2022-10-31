@@ -7,21 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/cd4daa012b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>STATED.</title>
 </head>
 
 <body>
     <nav>
-        <div class="logo">
-            <span>STATED.</span>
-        </div>
-        <div class="nav-links">
-            <a href="" class="home-link">Home</a>
-            <a href="" class="nav-link">Listings</a>
-            <a href="" class="nav-link">Agents</a>
-            <a href="" class="nav-link">About</a>
-            <a href="" class="nav-link">News</a>
-            <a href="" class="nav-link">Contact</a>
+        <div class="nav-container container">
+            <div class="logo">
+                <span>STATED.</span>
+            </div>
+            <div class="nav-links">
+                <a href="" class="home-link">Home</a>
+                <a href="" class="nav-link">Listings</a>
+                <a href="" class="nav-link">Agents</a>
+                <a href="" class="nav-link">About</a>
+                <a href="" class="nav-link">News</a>
+                <a href="" class="nav-link">Contact</a>
+            </div>
         </div>
     </nav>
     <header>
@@ -59,328 +63,359 @@
         </div>
     </section>
     <section class="prop">
-        <div class="head prop-head">
-            <h2>Properties</h2>
-            <div class="prop-btns">
-                <button class="prop-btn-dir prev-btn">Previous</button>
-                <span>/</span>
-                <button class="prop-btn-dir next-btn">Next</button>
+        <div class="prop-container container">
+            <div class="head prop-head">
+                <h2>Properties</h2>
+                <div class="prop-btns">
+                    <button class="prop-btn-dir prev-btn">Previous</button>
+                    <span>/</span>
+                    <button class="prop-btn-dir next-btn">Next</button>
+                </div>
             </div>
-        </div>
-        <div class="row prop-row">
-            <div class="col prop-col">
-                <img src="images/properties/house1.jpg" alt="Availabe Property">
-                <h3>$42,000,000</h3>
-                <p>18 beds | 19 baths | 400 sqft.</p>
-                <p>42 Vogon Way, Yakt, Montana</p>
+            <div class="prop-row">
+                <div class="prop-col">
+                    <img src="resources/images/properties/house1.jpg" alt="Availabe Property">
+                    <h3>$42,000,000</h3>
+                    <p>18 beds | 19 baths | 400 sqft.</p>
+                    <p>42 Vogon Way, Yakt, Montana</p>
+                </div>
+                <div class="prop-col">
+                    <img src="resources/images/properties/house2.jpg" alt="Availabe Property">
+                    <h3>$42,000,000</h3>
+                    <p>18 beds | 19 baths | 400 sqft.</p>
+                    <p>42 Vogon Way, Yakt, Montana</p>
+                </div>
+                <div class="prop-col">
+                    <img src="resources/images/properties/house3.jpg" alt="Availabe Property">
+                    <h3>$42,000,000</h3>
+                    <p>18 beds | 19 baths | 400 sqft.</p>
+                    <p>42 Vogon Way, Yakt, Montana</p>
+                </div>
+                <div class="prop-col">
+                    <img src="resources/images/properties/house4.jpg" alt="Availabe Property">
+                    <h3>$42,000,000</h3>
+                    <p>18 beds | 19 baths | 400 sqft.</p>
+                    <p>42 Vogon Way, Yakt, Montana</p>
+                </div>
+                <div class="prop-col">
+                    <img src="resources/images/properties/house5.jpg" alt="Availabe Property">
+                    <h3>$42,000,000</h3>
+                    <p>18 beds | 19 baths | 400 sqft.</p>
+                    <p>42 Vogon Way, Yakt, Montana</p>
+                </div>
             </div>
-            <div class="col prop-col">
-                <img src="images/properties/house2.jpg" alt="Availabe Property">
-                <h3>$42,000,000</h3>
-                <p>18 beds | 19 baths | 400 sqft.</p>
-                <p>42 Vogon Way, Yakt, Montana</p>
+            <div class="btn-box">
+                <button class="btn prop-btn">View All Available Properties</button>
             </div>
-            <div class="col prop-col">
-                <img src="images/properties/house3.jpg" alt="Availabe Property">
-                <h3>$42,000,000</h3>
-                <p>18 beds | 19 baths | 400 sqft.</p>
-                <p>42 Vogon Way, Yakt, Montana</p>
-            </div>
-            <div class="col prop-col">
-                <img src="images/properties/house4.jpg" alt="Availabe Property">
-                <h3>$42,000,000</h3>
-                <p>18 beds | 19 baths | 400 sqft.</p>
-                <p>42 Vogon Way, Yakt, Montana</p>
-            </div>
-            <div class="col prop-col">
-                <img src="images/properties/house5.jpg" alt="Availabe Property">
-                <h3>$42,000,000</h3>
-                <p>18 beds | 19 baths | 400 sqft.</p>
-                <p>42 Vogon Way, Yakt, Montana</p>
-            </div>
-        </div>
-        <div class="btn-box">
-            <button class="btn prop-btn">View All Available Properties</button>
         </div>
     </section>
     <section class="agent">
-        <div class="head agent-head">
-            <h2>Agents</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita maiores odio magni?</p>
-        </div>
-        <div class="row agent-row">
-            <div class="col agent-col">
-                <img src="images/agents/alice.jpg" alt="">
-                <div class="agent-abt">
-                    <h3>Alice Edwards</h3>
-                    <p>Real Estate Agent</p>
+        <div class="agent-container container">
+            <div class="head agent-head">
+                <h2>Agents</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita maiores odio magni?</p>
+            </div>
+            <div class="row agent-row">
+                <div class="col agent-col">
+                    <img src="resources/images/agents/alice.jpg" alt="">
+                    <div class="agent-abt">
+                        <h3>Alice Edwards</h3>
+                        <p>Real Estate Agent</p>
+                    </div>
+                </div>
+                <div class="col agent-col">
+                    <img src="resources/images/agents/bill.jpg" alt="">
+                    <div class="agent-abt">
+                        <h3>Bill Stevenson</h3>
+                        <p>Real Estate Agent</p>
+                    </div>
+                </div>
+                <div class="col agent-col">
+                    <img src="resources/images/agents/marie.jpg" alt="">
+                    <div class="agent-abt">
+                        <h3>Marie Watts</h3>
+                        <p>Real Estate Agent</p>
+                    </div>
                 </div>
             </div>
-            <div class="col agent-col">
-                <img src="images/agents/bill.jpg" alt="">
-                <div class="agent-abt">
-                    <h3>Bill Stevenson</h3>
-                    <p>Real Estate Agent</p>
+            <div class="row agent-row">
+                <div class="col agent-col">
+                    <img src="resources/images/agents/casper.jpg" alt="">
+                    <div class="agent-abt">
+                        <h3>Casper</h3>
+                        <p>Real Estate Agent</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col agent-col">
-                <img src="images/agents/marie.jpg" alt="">
-                <div class="agent-abt">
-                    <h3>Marie Watts</h3>
-                    <p>Real Estate Agent</p>
+                <div class="col agent-col">
+                    <img src="resources/images/agents/angela.jpg" alt="">
+                    <div class="agent-abt">
+                        <h3>Angela Williams</h3>
+                        <p>Real Estate Agent</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row agent-row">
-            <div class="col agent-col">
-                <img src="images/agents/casper.jpg" alt="">
-                <div class="agent-abt">
-                    <h3>Casper</h3>
-                    <p>Real Estate Agent</p>
-                </div>
-            </div>
-            <div class="col agent-col">
-                <img src="images/agents/angela.jpg" alt="">
-                <div class="agent-abt">
-                    <h3>Angela Williams</h3>
-                    <p>Real Estate Agent</p>
-                </div>
-            </div>
-            <div class="col agent-col">
-                <img src="images/agents/tim.jpg" alt="">
-                <div class="agent-abt">
-                    <h3>Tim Castillo</h3>
-                    <p>Real Estate Agent</p>
+                <div class="col agent-col">
+                    <img src="resources/images/agents/tim.jpg" alt="">
+                    <div class="agent-abt">
+                        <h3>Tim Castillo</h3>
+                        <p>Real Estate Agent</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="self">
-        <div class="self-pic">
-            <img src="images/properties/house6.jpg" alt="">
-        </div>
-        <div class="self-block">
-            <h2>We Are the Absolute Best Real Estate Company Ever to Exist in the Entire History of Real Estate
-                Companies</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, adipisci?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor molestiae pariatur earum impedit id
-                deleniti deserunt, odit dolores nisi enim.</p>
-            <ul>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Amet alias fugit dolor!</li>
-                <li>Doloremque miima aspernatur atque.</li>
-                <li>Amet praesentium repellat ex?</li>
-                <li>Sequi vel autem laudantium.</li>
-            </ul>
-            <button class="btn self-btn">Learn More</button>
+        <div class="self-container container">
+            <div class="self-pic">
+                <img src="resources/images/properties/house6.jpg" alt="">
+            </div>
+            <div class="self-block">
+                <h2>We Are the Absolute Best Real Estate Company Ever to Exist in the Entire History of Real Estate
+                    Companies</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, adipisci?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor molestiae pariatur earum impedit id
+                    deleniti deserunt, odit dolores nisi enim.</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Amet alias fugit dolor!</li>
+                    <li>Doloremque miima aspernatur atque.</li>
+                    <li>Amet praesentium repellat ex?</li>
+                    <li>Sequi vel autem laudantium.</li>
+                </ul>
+                <button class="btn self-btn">Learn More</button>
+            </div>
         </div>
     </section>
     <section class="serve cent">
-        <div class="head serve-head">
-            <h2>Services</h2>
-        </div>
-        <div class="row serve-row">
-            <div class="col serve-col">
-                <span class="icon-container">
-                    <i class="fa-solid fa-house"></i>
-                </span>
-                <div class="serve-content">
-                    <div>
-                        <h3>Search Properties</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, vitae. Magnam voluptate error
-                            illum alias?</p>
+        <div class="serve-container container">
+            <div class="head serve-head">
+                <h2>Services</h2>
+            </div>
+            <div class="row serve-row">
+                <div class="col serve-col">
+                    <span class="icon-container">
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+                    <div class="serve-content">
+                        <div>
+                            <h3>Search Properties</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, vitae. Magnam voluptate
+                                error
+                                illum alias?</p>
+                        </div>
+                        <a href="">Learn More</a>
                     </div>
-                    <a href="">Learn More</a>
+                </div>
+                <div class="col serve-col">
+                    <span class="icon-container">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </span>
+                    <div class="serve-content">
+                        <div>
+                            <h3>Buy Properties</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque ut, sapiente aspernatur
+                                vel
+                                explicabo est.</p>
+                        </div>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+                <div class="col serve-col">
+                    <span class="icon-container">
+                        <i class="fa-solid fa-money-bill-trend-up"></i>
+                    </span>
+                    <div class="serve-content">
+                        <div>
+                            <h3>Invest</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eligendi iure, provident
+                                nihil
+                                dolore hic.</p>
+                        </div>
+                        <a href="">Learn More</a>
+                    </div>
                 </div>
             </div>
-            <div class="col serve-col">
-                <span class="icon-container">
-                    <i class="fa-solid fa-hand-holding-dollar"></i>
-                </span>
-                <div class="serve-content">
-                    <div>
-                        <h3>Buy Properties</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque ut, sapiente aspernatur vel
-                            explicabo est.</p>
+            <div class="row serve-row">
+                <div class="col serve-col">
+                    <span class="icon-container">
+                        <i class="fa-solid fa-sign-hanging"></i>
+                    </span>
+                    <div class="serve-content">
+                        <div>
+                            <h3>Make a Listing</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptas repellat est
+                                laborum
+                                laboriosam beatae?</p>
+                        </div>
+                        <a href="">Learn More</a>
                     </div>
-                    <a href="">Learn More</a>
                 </div>
-            </div>
-            <div class="col serve-col">
-                <span class="icon-container">
-                    <i class="fa-solid fa-money-bill-trend-up"></i>
-                </span>
-                <div class="serve-content">
-                    <div>
-                        <h3>Invest</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eligendi iure, provident nihil
-                            dolore hic.</p>
+                <div class="col serve-col">
+                    <span class="icon-container">
+                        <i class="fa-solid fa-magnifying-glass-location"></i>
+                    </span>
+                    <div class="serve-content">
+                        <div>
+                            <h3>Property Locator</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quas similique unde rem
+                                eligendi atque.</p>
+                        </div>
+                        <a href="">Learn More</a>
                     </div>
-                    <a href="">Learn More</a>
                 </div>
-            </div>
-        </div>
-        <div class="row serve-row">
-            <div class="col serve-col">
-                <span class="icon-container">
-                    <i class="fa-solid fa-sign-hanging"></i>
-                </span>
-                <div class="serve-content">
-                    <div>
-                        <h3>Make a Listing</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, voluptas repellat est laborum
-                            laboriosam beatae?</p>
+                <div class="col serve-col">
+                    <span class="icon-container">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </span>
+                    <div class="serve-content">
+                        <div>
+                            <h3>Stated for iOS/Android</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa optio, est dicta cumque
+                                esse
+                                maiores.</p>
+                        </div>
+                        <a href="">Learn More</a>
                     </div>
-                    <a href="">Learn More</a>
-                </div>
-            </div>
-            <div class="col serve-col">
-                <span class="icon-container">
-                    <i class="fa-solid fa-magnifying-glass-location"></i>
-                </span>
-                <div class="serve-content">
-                    <div>
-                        <h3>Property Locator</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quas similique unde rem
-                            eligendi atque.</p>
-                    </div>
-                    <a href="">Learn More</a>
-                </div>
-            </div>
-            <div class="col serve-col">
-                <span class="icon-container">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                </span>
-                <div class="serve-content">
-                    <div>
-                        <h3>Stated for iOS/Android</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa optio, est dicta cumque esse
-                            maiores.</p>
-                    </div>
-                    <a href="">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="cred cent">
-        <div class="head cred-head">
-            <h2>What Our Clients Are Saying</h2>
-        </div>
-        <div class="cred-content">
-            <figure class="cred-fig">
-                <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quis laudantium odio
-                    ea autem molestias alias! Illo, aperiam facere. Repellendus rerum soluta repudiandae voluptatibus
-                    sint officia, quas consequuntur nostrum omnis."</blockquote>
-                <figcaption>
-                    <img src="images/customers/michael.jpg" alt="">
-                    <p>Michael Addams</p>
-                </figcaption>
-            </figure>
-            <figure class="cred-fig">
-                <blockquote>"Est optio animi, minima distinctio perferendis illum earum. Suscipit cupiditate a, maiores
-                    dignissimos dicta nemo nam fugit recusandae nobis dolor ullam magni aperiam repellendus soluta.
-                    Quaerat pariatur eaque illum recusandae?"</blockquote>
-                <figcaption>
-                    <img src="images/customers/ben.jpg" alt="">
-                    <p>Ben Fields</p>
-                </figcaption>
-            </figure>
-            <figure class="cred-fig">
-                <blockquote>"Esse optio facilis impedit, fuga adipisci maxime exercitationem? Optio earum vitae commodi
-                    dolores nesciunt, quos, ab voluptatem at porro voluptate dolorum repellendus exercitationem, neque
-                    deserunt quaerat sunt fugiat nihil enim."</blockquote>
-                <figcaption>
-                    <img src="images/customers/nina.jpg " alt="">
-                    <p>Nina Richards</p>
-                </figcaption>
-            </figure>
+    <section class="cred">
+        <div class="cred-container container">
+            <div class="head cred-head">
+                <h2>What Our Clients Are Saying</h2>
+            </div>
+            <div class="cred-content">
+                <figure class="cred-fig">
+                    <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quis laudantium
+                        odio
+                        ea autem molestias alias! Illo, aperiam facere. Repellendus rerum soluta repudiandae
+                        voluptatibus
+                        sint officia, quas consequuntur nostrum omnis."</blockquote>
+                    <figcaption>
+                        <img src="resources/images/customers/michael.jpg" alt="">
+                        <p>Michael Addams</p>
+                    </figcaption>
+                </figure>
+                <figure class="cred-fig">
+                    <blockquote>"Est optio animi, minima distinctio perferendis illum earum. Suscipit cupiditate a,
+                        maiores
+                        dignissimos dicta nemo nam fugit recusandae nobis dolor ullam magni aperiam repellendus soluta.
+                        Quaerat pariatur eaque illum recusandae?"</blockquote>
+                    <figcaption>
+                        <img src="resources/images/customers/ben.jpg" alt="">
+                        <p>Ben Fields</p>
+                    </figcaption>
+                </figure>
+                <figure class="cred-fig">
+                    <blockquote>"Esse optio facilis impedit, fuga adipisci maxime exercitationem? Optio earum vitae
+                        commodi
+                        dolores nesciunt, quos, ab voluptatem at porro voluptate dolorum repellendus exercitationem,
+                        neque
+                        deserunt quaerat sunt fugiat nihil enim."</blockquote>
+                    <figcaption>
+                        <img src="resources/images/customers/nina.jpg " alt="">
+                        <p>Nina Richards</p>
+                    </figcaption>
+                </figure>
+            </div>
         </div>
     </section>
     <section class="cont cent">
-        <div class="head cont-head">
-            <h2>Contact Us</h2>
-        </div>
-        <div class="cont-content">
-            <div class="cont-form">
-                <form action="">
-                    <h3>Contact Form</h3>
-                    <div class="cont-row">
-                        <label for="name">Name</label><br>
-                        <input type="text" name="" id="name">
-                    </div>
-                    <div class="cont-row">
-                        <label for="email">Email</label><br>
-                        <input type="text" name="" id="email">
-                    </div>
-                    <div class="cont-row">
-                        <label for="subject">Subject</label><br>
-                        <input type="text" name="" id="subject">
-                    </div>
-                    <div class="cont-row">
-                        <label for="message">Message</label><br>
-                        <textarea name="" id="message" rows="8"></textarea>
-                    </div>
-                    <div class="cont-row">
-                        <button class="cont-btn">Send Message</button>
-                    </div>
-                </form>
+        <div class="contact-container container">
+            <div class="head cont-head">
+                <h2>Contact Us</h2>
             </div>
-            <div class="cont-info">
-                <div class="address">
-                    <div class="cont-add">
-                        <h4>Address</h4>
-                        <p>3425 Left Lane, Rightburgh, Georgia, USA</p>
-                    </div>
-                    <div class="cont-add">
-                        <h4>Phone</h4>
-                        <a href="">555-555-5555</a>
-                    </div>
-                    <div class="cont-add">
-                        <h4>Email Address</h4>
-                        <a href="">ouremail@domain.com</a>
+            <div class="cont-content">
+                <div class="cont-form">
+                    <form action="">
+                        <h3>Contact Form</h3>
+                        <div class="cont-row">
+                            <label for="name">Name</label><br>
+                            <input type="text" name="" id="name">
+                        </div>
+                        <div class="cont-row">
+                            <label for="email">Email</label><br>
+                            <input type="text" name="" id="email">
+                        </div>
+                        <div class="cont-row">
+                            <label for="subject">Subject</label><br>
+                            <input type="text" name="" id="subject">
+                        </div>
+                        <div class="cont-row">
+                            <label for="message">Message</label><br>
+                            <textarea name="" id="message" rows="8"></textarea>
+                        </div>
+                        <div class="cont-row">
+                            <button class="cont-btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="cont-info">
+                    <div class="address">
+                        <div class="cont-add">
+                            <h4>Address</h4>
+                            <p>3425 Left Lane, Rightburgh, Georgia, USA</p>
+                        </div>
+                        <div class="cont-add">
+                            <h4>Phone</h4>
+                            <a href="">555-555-5555</a>
+                        </div>
+                        <div class="cont-add">
+                            <h4>Email Address</h4>
+                            <a href="">ouremail@domain.com</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <footer>
-        <div class="footer-nav">
-            <div class="footer-about">
-                <h4>About Stated</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non pariatur sunt tenetur repellendus architecto consectetur deserunt, et recusandae voluptatem numquam sequi cupiditate in ullam eius.</p>
-            </div>
-            <div class="footer-pilot">
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <a href="">About Us</a>
-                    <a href="">Services</a>
-                    <a href="">Testimonials</a>
-                    <a href="">Contact Us</a>
+        <div class="footer-container container">
+            <div class="footer-nav">
+                <div class="footer-about">
+                    <h4>About Stated</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non pariatur sunt tenetur repellendus
+                        architecto consectetur deserunt, et recusandae voluptatem numquam sequi cupiditate in ullam eius.
+                    </p>
                 </div>
-                <div class="footer-etc">
-                    <div class="subscribe">
-                        <h4>Subscribe to our Newsletter</h4>
-                        <span class="sub-input">
-                            <input type="text" placeholder="Enter Email">
-                            <button class="sub-btn">Send</button>
-                        </span>
+                <div class="footer-pilot">
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <a href="">About Us</a>
+                        <a href="">Services</a>
+                        <a href="">Testimonials</a>
+                        <a href="">Contact Us</a>
                     </div>
-                    <div class="socials">
-                        <h4>Follow Us</h4>
-                        <div class="social-links">
-                            <a href="" class="fb-link"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="" class="twit-link"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="" class="insta-link"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="" class="lnkdin-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <div class="footer-etc">
+                        <div class="subscribe">
+                            <h4>Subscribe to our Newsletter</h4>
+                            <span class="sub-input">
+                                <input type="text" placeholder="Enter Email">
+                                <button class="sub-btn">Send</button>
+                            </span>
+                        </div>
+                        <div class="socials">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="" class="fb-link"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="" class="twit-link"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="" class="insta-link"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="" class="lnkdin-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="copyright">
-            <span>Copyright © 2022 All rights reserved | This template is made with <i class="fa-regular fa-heart"></i> by</span>
+            <div class="copyright">
+                <span>Copyright © 2022 All rights reserved | This template is made with <i class="fa-regular fa-heart"></i>
+                    by</span>
+            </div>
         </div>
     </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
     <script src="main.js"></script>
 </body>
 

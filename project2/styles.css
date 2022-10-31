@@ -30,12 +30,7 @@ body {
     font-weight: 500;
     color: var(--main-clr);
     background: var(--main-wht);
-    /* overflow-x: hidden; */
     scroll-behavior: smooth;
-}
-
-body > * {
-    padding: 20px 10%;
 }
 
 a {
@@ -51,13 +46,15 @@ h2 {
 }
 
 h2 {
-    color: var(--highlight)
+    color: var(--highlight);
+    margin-bottom: 30px;
 }
 
 h3 {
     font-weight: 500;
     color: var(--scndry-clr);
 }
+
 
 .icon-container {
     color: var(--highlight);
@@ -67,6 +64,14 @@ h3 {
 .icon-container * {
     height: 35px;
     width: 35px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1100px;
+    margin: 60px auto;
 }
 
 img {
@@ -82,6 +87,7 @@ button {
     padding: 10px 15px;
     border: none;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .btn-box {
@@ -89,27 +95,12 @@ button {
     text-align: center;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-}
-
-section > * {
-    padding: 30px 0;
-}
-
-.cent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .row {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%
+    gap: 5%;
+    padding-top: 10px;
 }
 
 .col {
@@ -124,7 +115,6 @@ section > * {
 
 
 
-
 /* ----------- sticky nav ----------- */
 
 nav {
@@ -132,16 +122,19 @@ nav {
     top: 0;
     width: 100%;
     background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     z-index: 9999;
-    padding: 30px 75px;
+    padding: 30px 60px;
     color: var(--main-wht);
     border-bottom: 1px solid var(--main-clr);
     transition: 400ms;
 }
 
+.nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
 
 .logo {
     font-family: 'Megrim', cursive;
@@ -192,7 +185,7 @@ nav {
 
 header {
     height: 100vh;
-    background: linear-gradient(rgb(45 52 59 / 0.9), rgb(45 52 59 / 0.9)), url(images/properties/home-house.jpg);
+    background: linear-gradient(rgb(45 52 59 / 0.9), rgb(45 52 59 / 0.9)), url(resources/images/properties/home-house.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -219,11 +212,14 @@ h1 {
 
 .how {
     background: rgb(240 240 240);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
 }
 
 .how-row {
-    padding-top: 10px;
-    padding-bottom: 50px;
 }
 
 .how-col > p {
@@ -234,11 +230,9 @@ h1 {
 
 /* ----------- properties ----------- */
 
-.prop {
-    padding: 20px 0;
-    width: 80%;
+.prop-row {
+    width: 1050px;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .prop-head {
@@ -257,14 +251,17 @@ h1 {
 
 .prop-btn {
     padding: 15px 80px;
+    margin-top: 50px;
 }
 
-.prop-row {
+.slick-slide {
+    width: 200px;
+    margin: 0 20px;
+}
+
+.prop-col img {
+    height: auto;
     width: 100%;
-}
-
-.prop-row-slide {
-    transition: transform 350ms ease-out;
 }
 
 
@@ -312,12 +309,12 @@ h1 {
 
 /* ----------- we the best ----------- */
 
-.self {
+.self-container {
     flex-direction: row;
     justify-content: space-between;
 }
 
-.self > * {
+.self-container > * {
     width: 46%;
 }
 
@@ -364,9 +361,16 @@ h1 {
     background: rgb(240 240 240);
 }
 
+.serve-container {
+    align-items: center;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
 .serve-row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
 }
 
 .serve-col {
@@ -402,8 +406,30 @@ h1 {
 
 /* ----------- testimonials ----------- */
 
-.cred-content {
-    width: 65%;
+.cred-head {
+    margin: 0 auto 30px auto;
+}
+
+.cred-container {
+    width: 60%;
+    max-width: 1000px;
+}
+
+.cred-prev,
+.cred-next {
+    position: absolute;
+    top: 30%;
+    font-size: 3em;
+    background-color: transparent;
+    color: var(--scndry-clr);
+}
+
+.cred-next {
+    right: -100px;
+}
+
+.cred-prev {
+    left: -100px;
 }
 
 blockquote {
@@ -435,6 +461,14 @@ figcaption img {
     background: rgb(240 240 240);
 }
 
+.contact-container {
+    margin-bottom: 0;
+}
+
+.cont-head {
+    margin: 30px auto 60px auto;
+}
+
 .cont-content {
     display: flex;
     width: 100%;
@@ -445,6 +479,8 @@ figcaption img {
     background: var(--main-wht);
     flex-grow: 5;
     width: auto;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .cont-form h3 {
@@ -501,7 +537,12 @@ figcaption img {
 
 footer {
     background: rgb(50 50 50);
-    padding: 120px 10%;
+}
+
+.footer-container {
+    padding: 120px 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h4 {
@@ -517,12 +558,10 @@ h4 {
 .footer-about {
     display: inline-block;
     width: 25%;
-    flex-basis: 1;
 }
 
 .footer-pilot {
     width: 50%;
-    flex-basis: 4;
     display: flex;
     justify-content: end;
     align-items: start;
@@ -542,12 +581,8 @@ h4 {
     padding: 10px 0;
 }
 
-.footer-pilot h4 {
+.footer-nav h4 {
     padding-bottom: 10px;
-}
-
-.subscribe {
-    
 }
 
 .sub-input {
