@@ -1,7 +1,29 @@
 @font-face {
-    font-family: 'Cartograph';
-    src: url();
+    font-family: 'Victor Mono';
+    src: url(resources/fonts/VictorMono-Regular.woff2) format('woff2');
+    font-style: normal;
+    font-weight: normal;
 }
+@font-face {
+    font-family: 'Victor Mono';
+    src: url(resources/fonts/VictorMono-Bold.woff2) format('woff2');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Victor Mono';
+    src: url(resources/fonts/VictorMono-Italic.woff2) format('woff2');
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Victor Mono';
+    src: url(resources/fonts/VictorMono-BoldItalic.woff2) format('woff2');
+    font-style: italic;
+    font-weight: bold;
+}
+
+
 
 :root {
     --cat1: #f5e0dc;
@@ -31,7 +53,9 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-weight: 400;
+    font-family: 'Victor Mono', monospace;
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
