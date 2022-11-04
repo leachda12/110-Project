@@ -85,54 +85,114 @@ body {
 }
 
 body {
-    background-color: var(--shad10);
     height: 100vh;
-    /* background-color: #1E1E2E;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%239399B2' stroke-width='66.9' stroke-opacity='0.19' %3E%3Ccircle fill='%231E1E2E' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23222233' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23262738' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%232b2b3c' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%232f3041' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23333446' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%2338394b' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%233c3e50' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23414355' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%2346475b' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%234a4c60' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%234f5165' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%2354566b' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23585b70' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%235d6075' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%2362667b' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23676b80' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%236C7086' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E"); background by www.svgbackgrounds.com */
-    /* background-attachment: fixed;
-    background-size: cover; */
+    width: 100vw;
+    background: #CDD6F4;
+    background: radial-gradient(circle farthest-side at 50% 200px, #CDD6F4 8%, #BAC2DE 16%, #A6ADC8 25%, #9399B2 33%, #7F849C 41%, #6C7086 50%, #585B70 58%, #45475A 66%, #313244 75%, #1E1E2E 83%, #181825 91%, #11111B 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    cursor: url(resources/images/flashlight.png), default;
+    transition: background-color 3s ease-in, background-image 3s;
 }
 
-body::before {
-    content:'';
+.guise {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--shad11);
+    background-image: url(resources/images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+.head {
+    height: 100vh;
+    background-color: black;
+    position: relative; 
+    transition: 0.2s;
+    mix-blend-mode: multiply;
+    z-index: 2;
+} 
+
+.fake-power img:hover {
+    cursor: url(resources/images/point.png), pointer;
+}
+
+.search {
+    cursor: url(resources/images/flashlight.png), default;
+}
+
+.power {
     position: absolute;
     top: calc(50% - 50px);
     left: calc(50% - 50px);
     height: 100px;
     width: 100px;
+    border: none;
     border-radius: 40px;
-    background-color: #73738b;
-}
-
-body::after {
-    content: '';
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    display: block;
-    background-image: url(resources/images/bg.png);
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover
+    background-size: contain;
+    z-index: 1;
 }
 
-.head {
-    height: 100vh;
-    /* background-color: black; */
+.fake-power {
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    height: 80px;
+    width: 80px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10;
+    transition: box-shadow 1500ms;
+}
+
+.fake-power img {
+    height: 125%;
     position: relative;
-    cursor: pointer; 
-    transition: 0.2s;
-    mix-blend-mode: multiply;
-} 
+    bottom: 10px;
+    right: 10px;
+    display: none;
+}
+
+.fake-power:hover {
+    box-shadow: 0 0 100px var(--cat10), inset 0 0 80px var(--cat10);
+}
+
+.power img {
+    height: 100%;
+}
 
 .glow {
     display: block;
     position: absolute;
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 700px;
     border-radius: 50%;
-    background-image: radial-gradient(rgb(255 255 255 / 0.46), transparent 60%);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.4), transparent 60%);
+}
+
+.light-box {
+    position: absolute;
+    left: calc(50% - 200px);
+    display: none;
+    animation-delay: 0.5s;
+}
+
+.let-there-be-light {
+    display: initial;
+}
+
+.the-light {
+    height: 400px;
 }
