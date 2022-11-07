@@ -39,9 +39,6 @@ $('document').ready(function () {
     const logo = document.querySelector('.the-light');
 
 
-
- 
-
     const navShrink = new IntersectionObserver(function(entries, navShrink) {
         entries.map(entry => {
             if(entry.isIntersecting) {
